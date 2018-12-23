@@ -1,0 +1,27 @@
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #3E4349;
+}
+
+img {
+  width: 100%;
+}
+
+#meat-filter {
+  column-count: 2;
+}
+
+#content {
+  margin: 0 auto;
+  padding: 20px;
+  width: 600px;
+  min-height: 100%;
+}
+ 
+#footer {
+  width: 100%;
+  text-align: center;
+}
+
+a            { color: #aa0000; }
+a:hover      { color: #dd0000; }

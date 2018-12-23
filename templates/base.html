@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}
+  <link rel='stylesheet' href='/static/css/style.css' />
+  <title>{% block title %}{% endblock %} - Nicole's Cook Book</title>
+  {% endblock %}
+</head>
+<body>
+  <div id='content'>
+    <h1><a href='/'>Nicole's Cook Book</a></h1>
+    <hr>
+    {% block content %}{% endblock %}
+    <hr>
+    <div id='footer'>Use Ctrl-F to search | Merry Christmas 2018</div>
+  </div>
+</body>
+</html>

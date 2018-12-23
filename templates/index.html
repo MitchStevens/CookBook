@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+  <p>
+  <div id="meat-filter">
+    Filter by meat type:
+    <ul>
+      {% for meat in meats %}
+        <li>
+          <a href='/group/{{meat}}'>{{meat}}</a>
+          <ul>
+            {% for submeat in meats[meat] %}
+              <li>
+                <a href='/group/{{meat}}/{{submeat}}'>{{submeat}}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <hr>
+
+  <p>
+  <div id='recipes'>
+    Found {{num_recipes}} recipes
+    {{recipes|safe}}
+  </div>
+{% endblock %}
