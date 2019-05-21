@@ -81,3 +81,10 @@ def count_recipes(obj):
   elif isinstance(obj, set) or isinstance(obj, list):
     return sum(map(count_recipes, obj))
   return 0
+
+import os
+
+
+# app = Flask(__name__)
+app.run(host='192.168.1.19')
+# app.run(host='localhost:5000')
